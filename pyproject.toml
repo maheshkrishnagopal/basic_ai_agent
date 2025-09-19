@@ -1,0 +1,30 @@
+[project]
+name = "gemini-tavily-agent"
+version = "0.1.0"
+description = "A modular LangGraph ReAct agent using Google Gemini and Tavily Search"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.ruff]
+# Enable both linter and formatter
+line-length = 88
+target-version = "py310"
+
+# Ruff rules:
+# - E: pycodestyle errors
+# - F: pyflakes
+# - I: isort
+# - B: flake8-bugbear
+# - UP: pyupgrade
+lint.select = ["E", "F", "I", "B", "UP"]
+
+# Ignore some rules if you want (example: allow long docstrings)
+lint.ignore = ["E501"]
+
+# Automatically format imports and code
+format.preview = true
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
+combine-as-imports = true
+force-sort-within-sections = true

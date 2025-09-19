@@ -1,0 +1,10 @@
+langchain>=0.2.15
+langgraph>=0.2.24
+langchain-tavily>=0.1.0
+tavily-python>=0.4.0
+langchain-google-genai>=2.0.0
+python-dotenv>=1.0.1
+# Optional for persistent checkpoints (uncomment if you plan to use it)
+# langgraph-checkpoint-sqlite>=0.0.3
+# Development tools
+ruff>=0.6.8
